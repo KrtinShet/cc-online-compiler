@@ -39,7 +39,7 @@ class Executor {
     const _path = path.join(__dirname, "tmp", filename);
 
     this.writefile(`${_path}.py`, code);
-    const { stdout, stderr } = await exec(`py ${_path}.py`);
+    const { stdout, stderr } = await exec(`python ${_path}.py`);
     this.removefile(`${_path}.py`);
 
     if (stderr) return 'Error executing Python code: ' + stderr;
