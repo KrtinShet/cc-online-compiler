@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Online Code Compiler supporting JavaScript, Python, and C code execution",
   "main": "index.js",
   "scripts": {
     "start:server": "node index.js",
